@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>DiGI</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/" class="logo"><strong>DiGI</strong> <span>monografía</span></a>
+	<nav>
+		<!-- <a href="#menu">Menu</a> -->
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		        <li><a href="/">Home</a></li>
+	    	
+		
+		    
+		
+		
+		    
+		        <li><a href="/all_posts.html">All posts</a></li>
+		    
+		
+		    
+		        <li><a href="/generic.html">Generic</a></li>
+		    
+		
+		    
+		
+		    
+		
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>DNS</h1>
+		</header>
+		
+		<p><p>Evitar la censura mediante el bloqueo de los DNS</p>
+
+<p>Descripción del contexto</p>
+
+<p>Existen varios DNS “abiertos” disponibles para evitar la censura que un gobierno puede hacer bloqueando este servicio. Los más conocidos son el de google, 8.8.8.8 (anycast), OpenDNS https://www.opennic.org (Cisco) y los que mantiene OpenNicProyect, https://www.opennic.org</p>
+
+<p>Propuesta</p>
+
+<p>Se propone brindar una alternativa más robusta, que permita seleccionar de manera automática un DNS “Libre” y “Seguro”, como los de OpenNicProyect (es decir, que no corresponda a una empresa, como el caso google y OpenDNS que puedan registrar las consultas).</p>
+
+<p>La idea es registrar un DNS en una dirección anycast y permitir agregar servidores que quieran “sumarse” al proyecto, siguiendo el modelo del F root server, http://www.aftld.org/bk/html/francais/francais/html/meetings/docs/anycast%20root%20servers.pdf , https://www.isc.org/f-root</p>
+
+<p>Estos DNS que se “integren” al proyecto deberan ser de instituciones con amplia trayectoria en la defenza de las libertades de los usuarios, lo que garantizará su correcto funcionamiento y que no esté registrando ninguna actividad de los usuarios.</p>
+
+<p>Breve resumen del modo de trabajo</p>
+
+<p>El usuario final (o una app) solo va a definir una única dirección de DNS. Como lo que está haciendo es configurar un poll de servidores. en el supuesto caso de una censura, el mismo protocolo anycast es el encargado de seleccionar otro servidor. Es importante, para que el sistema tenga una verdadera utilidad, realizar las acciones de promoción necesarias con el objetivo de aumentar la cantidad de servidores (instituciones que confíen y apoyen la idea).</p>
+
+<p>Ref</p>
+
+<p>Google DNS: Figuring out which DNS Cluster you are using http://www.labs.lacnic.net/site/google-dns-figuringwhich-cluster-you-are-using</p>
+
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Footer -->
+
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
