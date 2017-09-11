@@ -1,8 +1,8 @@
 # site settings
 title: DiGI
-subtitle: monografía
+subtitle: Monografía
 email: youremailaddress@gmail.com
-description: Trabajo final<br /> Diplomatura DiGI
+description: Trabajo final<br /> Diplomatura en Gobernanza de Internet.
 baseurl: "/digi" # the subpath of your site, e.g. /blog
 url: "https://dbellomo.github.io" # the base hostname & protocol for your site
 author:

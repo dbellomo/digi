@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Home
-landing-title: 'DRAFT monografía DRAFT'
+landing-title: Monografía'
 description: null
 image: null
-author: null
+author: Daniel Bellomo
 ---
 
 
