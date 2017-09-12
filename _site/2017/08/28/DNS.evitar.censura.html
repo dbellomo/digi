@@ -84,21 +84,27 @@
 
 <p>Se propone brindar una alternativa más robusta, que permita seleccionar de manera automática un DNS “Libre” y “Seguro”, como los de OpenNicProyect (es decir, que no corresponda a una empresa, como el caso google y OpenDNS que puedan registrar las consultas).</p>
 
-<p>La idea es registrar un DNS en una dirección anycast y permitir agregar servidores que quieran “sumarse” al proyecto, siguiendo el modelo del F root server, http://www.aftld.org/bk/html/francais/francais/html/meetings/docs/anycast%20root%20servers.pdf , https://www.isc.org/f-root</p>
+<p>La idea es registrar un DNS en una dirección anycast y permitir agregar servidores que quieran “sumarse” al proyecto, siguiendo el modelo del <a href="http://www.aftld.org/bk/html/francais/francais/html/meetings/docs/anycast%20root%20servers.pdf">F root server</a> , https://www.isc.org/f-root</p>
 
 <p>Estos DNS que se “integren” al proyecto deberan ser de instituciones con amplia trayectoria en la defenza de las libertades de los usuarios, lo que garantizará su correcto funcionamiento y que no esté registrando ninguna actividad de los usuarios.</p>
 
-<p>Breve resumen del modo de trabajo</p>
+<h3 id="breve-resumen-del-modo-de-trabajo">Breve resumen del modo de trabajo</h3>
 
 <p>El usuario final (o una app) solo va a definir una única dirección de DNS. Como lo que está haciendo es configurar un poll de servidores. en el supuesto caso de una censura, el mismo protocolo anycast es el encargado de seleccionar otro servidor. Es importante, para que el sistema tenga una verdadera utilidad, realizar las acciones de promoción necesarias con el objetivo de aumentar la cantidad de servidores (instituciones que confíen y apoyen la idea).</p>
 
-<p>Ampliar la red Tor en el país.</p>
+<h2 id="ampliar-la-red-tor-en-el-pas">Ampliar la red Tor en el país.</h2>
 
 <p>Para mejorar la infraestructura de la red Tor en el país se propone la instalación de nodos de salida Tor en los distintos NAPs de CABASE.</p>
+
+<p>Recientemente un activista de los derechos de la sociedad civil ha sufrido graves problemas con la justicia Argentina debido a la instalación y configuración de un nodo de salida a la red Tor en su domicilio, con idea de fortalecer la infraestructura de la red Tor en el país. Con este antecedentes, se propone la instalación de nodos de salida de la red Tor en los NAPs de CABASE.</p>
+
+<p><img src="https://dbellomo.github.io/assets/images/tor-workflow.jpg" alt="Tor" /></p>
 
 <p>Ref</p>
 
 <p>Google DNS: Figuring out which DNS Cluster you are using http://www.labs.lacnic.net/site/google-dns-figuringwhich-cluster-you-are-using</p>
+
+<p><a href="https://www.ekoparty.org/charla.php?id=793">TOR Exit Nodes en la justicia Argentina</a></p>
 
 <p><a href="https://dbellomo.github.io/digi/DiGI-dbellomo-DNS.evitar.censura.pdf">documento en formato pdf</a></p>
 </p>
