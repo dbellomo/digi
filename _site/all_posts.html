@@ -90,6 +90,34 @@
 
 <p>Estos DNS que se “integren” al proyecto deberan ser de instituciones con amplia trayectoria en la defenza de las libertades de los usuarios, lo que garantizará su correcto funcionamiento y que no esté registrando ninguna actividad de los usuarios.</p>
 
+<p>Recientemente NIC Argentina y RIU implementaron una red anycast</p>
+
+<p>Se muestra el gráfico del desarrollo</p>
+
+<p><img src="https://dbellomo.github.io/digi/assets/images/ANYCAST-antes-despues.png" alt="red anycast" /></p>
+
+<p>Para mostrar como los ISPs bloquean ciertos dominios, muestro que Arnet no permite resolver el dominio de Bahía Pirata, https://thepiratebay.org</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>newen ~  dig thepiratebay.org         
+
+; &lt;&lt;&gt;&gt; DiG 9.10.3-P4-Debian &lt;&lt;&gt;&gt; thepiratebay.org
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NXDOMAIN, id: 15123
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;thepiratebay.org.		IN	A
+
+;; Query time: 39 msec
+;; SERVER: 192.168.1.1#53(192.168.1.1)
+;; WHEN: Sun Oct 29 21:53:32 -03 2017
+;; MSG SIZE  rcvd: 45
+
+</code></pre></div></div>
+
 <h3 id="breve-resumen-del-modo-de-trabajo">Breve resumen del modo de trabajo</h3>
 
 <p>El usuario final (o una app) solo va a definir una única dirección de DNS. Como lo que está haciendo es configurar un poll de servidores. en el supuesto caso de una censura, el mismo protocolo anycast es el encargado de seleccionar otro servidor. Es importante, para que el sistema tenga una verdadera utilidad, realizar las acciones de promoción necesarias con el objetivo de aumentar la cantidad de servidores (instituciones que confíen y apoyen la idea).</p>
