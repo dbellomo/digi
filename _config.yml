@@ -1,6 +1,6 @@
 # site settings
 title: DiGI
-subtitle: Monografía
+subtitle: 
 email: youremailaddress@gmail.com
 description: Trabajo final<br /> Diplomatura en Gobernanza de Internet.
 baseurl: "/digi" # the subpath of your site, e.g. /blog
